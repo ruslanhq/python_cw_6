@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from webapp.views import entry_view, entry_create, entry_update, entry_delete
+from webapp.views import entry_view, entry_create, entry_update, entry_delete, entry_search
 
 
 urlpatterns = [
@@ -23,5 +23,6 @@ urlpatterns = [
     path('', entry_view, name='index'),
     path('entry/add/', entry_create, name='entry_add'),
     path('entry/edit/<int:pk>/', entry_update, name='entry_edit' ),
-    path('entry/delete/<int:pk>/', entry_delete, name='entry_delete')
+    path('entry/delete/<int:pk>/', entry_delete, name='entry_delete'),
+    path('entry/search/', entry_search, name='search')
 ]

@@ -6,11 +6,7 @@
     </li>
 {% endblock %}
 {% block content %}
-    <h1>Guest Book</h1>
-    <form method="GET" action="{% url 'search' %}">
-        <p><input type="search" name="form" placeholder="Поиск по сайту">
-        <input type="submit" value="Найти"></p>
-    </form>
+        <h1>Guest Book</h1>
     {% for entr in entry %}
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
@@ -22,5 +18,5 @@
                 </div>
             </div>
         <hr/>
-        {% endfor %}
+    {% endfor %}
 {% endblock %}

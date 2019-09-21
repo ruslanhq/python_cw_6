@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404,redirect
 from webapp.models import Entry
-from webapp.forms import EntryForm
+from webapp.forms import EntryForm, SearchForm
 
 # Create your views here.
 
@@ -69,3 +69,11 @@ def entry_delete(request, pk):
     elif request.method == 'POST':
         entry.delete()
         return redirect('index')
+
+
+def entry_search(request):
+    query = request.GET.get('form')
+    entry = Entry.objects.filter(name__contains=query)
+    return render(request, 'search.html', {'entry': entry})
+
+
