@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from webapp.views import entry_view, entry_create, entry_update
+from webapp.views import entry_view, entry_create, entry_update, entry_delete
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', entry_view, name='index'),
     path('entry/add/', entry_create, name='entry_add'),
-    path('entry/edit/<int:pk>/', entry_update, name='entry_edit' )
+    path('entry/edit/<int:pk>/', entry_update, name='entry_edit' ),
+    path('entry/delete/<int:pk>/', entry_delete, name='entry_delete')
 ]
