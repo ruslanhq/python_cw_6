@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Guest Book{% endblock %}
+{% block content %}
+        <h1>Guest Book</h1>
+        {% for entr in entry %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ entr.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ entr.email }}</h6>
+                    <p class="card-text">{{ entr.text }}</p>
+                    <a href="{{ url 'edit' entry.pk }}" class="card-link"><i class="fas fa-edit"></i></a>
+                    <a href="{{ url 'delete' entry.pk }}" class="card-link"><i class="fas fa-trash-alt"></i></a>
+                </div>
+            </div>
+        <hr/>
+        {% endfor %}
+{% endblock %}
