@@ -1,0 +1,80 @@
+[
+{
+  "model": "webapp.entry",
+  "pk": 1,
+  "fields": {
+    "name": "John Doe",
+    "email": "john_doe@example.com",
+    "text": "lorem ipsum",
+    "time_create": "2019-09-21T06:06:41.618Z",
+    "time_edit": "2019-09-21T06:07:38.914Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 2,
+  "fields": {
+    "name": "Vasilii Pupkin",
+    "email": "vasya@example.com",
+    "text": "lorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sit",
+    "time_create": "2019-09-21T06:07:32.966Z",
+    "time_edit": "2019-09-21T06:07:32.966Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 3,
+  "fields": {
+    "name": "Andrew Mik",
+    "email": "mik345@mail.ru",
+    "text": "lorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sit",
+    "time_create": "2019-09-21T06:08:38.306Z",
+    "time_edit": "2019-09-21T06:08:38.306Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 4,
+  "fields": {
+    "name": "Ann Mitch",
+    "email": "zxcasd@gmail.com",
+    "text": "lorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sit",
+    "time_create": "2019-09-21T06:09:10.431Z",
+    "time_edit": "2019-09-21T06:09:10.431Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 5,
+  "fields": {
+    "name": "Mila Kor",
+    "email": "qwerty@gmail.com",
+    "text": "lorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sit",
+    "time_create": "2019-09-21T06:09:38.788Z",
+    "time_edit": "2019-09-21T06:09:38.788Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$VDwZhaUZ4xR9$sYdEWrERyEm/HmYXsr5JxpSWXtIMCoKTv1vL46UwEro=",
+    "last_login": "2019-09-21T06:05:16.378Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-21T05:18:59.280Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
